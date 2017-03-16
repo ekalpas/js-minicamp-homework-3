@@ -7,6 +7,14 @@ function makeCat(name, age) {
   //add an age property to the object with the value set to the age argument
   //add a method called meow that returns the string 'Meow!'
   //return the object
+var myObj = {
+  'name': name,
+  'age': age,
+  meow: function(){
+    return 'Meow!';
+  }
+};
+return myObj;
 }
 
 function addProperty(object, property) {
@@ -34,6 +42,12 @@ function deleteProperty(object, property) {
 function newUser(name, email, password) {
   //create a new object with properties matching the arguments passed in.
   //return the new object
+  var obj = {
+    'name': name,
+    'email': email,
+    'password': password
+  };
+  return obj;
 }
 
 function hasEmail(user) {
@@ -83,7 +97,7 @@ function addCalculateDiscountPriceMethod(storeItem) {
   //add a method to the storeItem object called 'calculateDiscountPrice'
   //this method should multiply the storeItem's 'price' and 'discountPercentage' to get the discount
   //the method then subtracts the discount from the price and returns the discounted price
-  //example: 
+  //example:
   //price -> 20
   //discountPercentage -> .2
   //discountPrice = 20 - (20 * .2)
